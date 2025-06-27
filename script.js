@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.getElementById("voteForm").addEventListener("submit", function(event) {
   event.preventDefault(); // stop default form submission
 
@@ -6,7 +5,7 @@ document.getElementById("voteForm").addEventListener("submit", function(event) {
   const age = document.getElementById("age").value.trim();
 
   if (!name || !age) {
-    alert("Please enter valid details.");
+    alert("Please enter valid details");
     return;
   }
 
@@ -32,4 +31,3 @@ function checkEligibility(name, age) {
     }, 4000);
   });
 }
-
